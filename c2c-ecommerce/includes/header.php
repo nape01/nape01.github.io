@@ -43,13 +43,13 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                     </li>
                     <?php if ($isLoggedIn): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="sell.php">Sell Item</a>
+                            <a class="nav-link" href="products_manage.php?action=sell">Sell Item</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="my_products.php">My Products</a>
+                            <a class="nav-link" href="products_manage.php?action=list">My Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="messages.php">Messages</a>
+                            <a class="nav-link" href="account.php?action=messages">Messages</a>
                         </li>
                     <?php endif; ?>
                 </ul>
@@ -67,7 +67,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                 <ul class="navbar-nav">
                     <?php if ($isLoggedIn): ?>
                         <li class="nav-item">
-                            <a class="nav-link position-relative" href="cart.php">
+                            <a class="nav-link position-relative" href="shopping.php?action=cart">
                                 <i class="bi bi-cart3"></i>
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">
                                     <?php
@@ -92,22 +92,22 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                                 <i class="bi bi-person-circle"></i> <?php echo htmlspecialchars($username); ?>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="profile.php">My Profile</a></li>
-                                <li><a class="dropdown-item" href="orders.php">My Orders</a></li>
+                                <li><a class="dropdown-item" href="account.php?action=profile">My Profile</a></li>
+                                <li><a class="dropdown-item" href="account.php?action=orders">My Orders</a></li>
                                 <?php if ($userRole === 'admin'): ?>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="admin/index.php">Admin Dashboard</a></li>
                                 <?php endif; ?>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                                <li><a class="dropdown-item" href="auth.php?action=logout">Logout</a></li>
                             </ul>
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.php">Login</a>
+                            <a class="nav-link" href="auth.php?action=login">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary text-white ms-2" href="register.php">Register</a>
+                            <a class="nav-link btn btn-primary text-white ms-2" href="auth.php?action=register">Register</a>
                         </li>
                     <?php endif; ?>
                 </ul>

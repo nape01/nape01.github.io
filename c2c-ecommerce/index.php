@@ -19,7 +19,7 @@ $categories = $conn->query($categoryQuery);
 <!-- Hero Section -->
 <section class="hero-section text-center">
     <div class="container">
-        <h1>Welcome to C2C Marketplace</h1>
+        <h1>Welcome to a trusted C2C Marketplace Brought to you by NB-Connect SA</h1>
         <p class="lead my-4">Buy and sell goods securely in South Africa</p>
         <a href="products.php" class="btn btn-light btn-lg">Browse Products</a>
         <?php if (!$isLoggedIn): ?>
