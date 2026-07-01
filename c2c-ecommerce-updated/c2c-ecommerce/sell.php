@@ -1,0 +1,1 @@
+<?php header('Location: products_manage.php'); exit; ?>

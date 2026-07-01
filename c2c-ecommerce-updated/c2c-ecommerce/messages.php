@@ -1,0 +1,1 @@
+<?php require_once 'includes/header.php'; ?><div class="container py-5"><h2>Messages</h2><p>Messaging module placeholder.</p></div><?php require_once 'includes/footer.php'; ?>

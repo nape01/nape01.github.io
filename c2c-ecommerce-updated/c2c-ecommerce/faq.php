@@ -1,0 +1,1 @@
+<?php require_once 'includes/header.php'; ?><div class="container py-5"><h2>Frequently Asked Questions</h2><p>FAQ page placeholder for deployment readiness.</p></div><?php require_once 'includes/footer.php'; ?>

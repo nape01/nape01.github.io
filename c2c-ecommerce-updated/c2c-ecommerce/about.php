@@ -1,0 +1,1 @@
+<?php require_once 'includes/header.php'; ?><div class="container py-5"><h2>About NB-Connect</h2><p>NB-Connect is a customer-to-customer e-commerce marketplace developed for academic purposes.</p></div><?php require_once 'includes/footer.php'; ?>

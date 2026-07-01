@@ -1,0 +1,1 @@
+<?php require_once 'includes/header.php'; ?><div class="container py-5"><h2>Order Details</h2><p>Order details page placeholder.</p></div><?php require_once 'includes/footer.php'; ?>
